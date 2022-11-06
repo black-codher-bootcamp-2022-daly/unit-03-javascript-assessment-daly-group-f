@@ -21,5 +21,6 @@ let events = document.createElement('button')
 events.className = 'timeline-item-more-info'
 events.innerHTML = 'Click for more info'
 container.appendChild(events)
-document.body.appendChild(container)
+document.body.getElementsByClassName("timeline")[0].appendChild(container)
 }
+
