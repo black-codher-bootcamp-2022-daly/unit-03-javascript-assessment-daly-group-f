@@ -19,10 +19,12 @@ paragraph.innerHTML = dates[i].summary
 container.appendChild(paragraph)
 let events = document.createElement('button')
 events.className = 'timeline-item-more-info'
+events.setAttribute('id', 'btn-open')
 events.innerHTML = 'Click for more info'
 container.appendChild(events)
 let modal = document.createElement('div')
 modal.setAttribute('id', 'modal-container')
+modal.className = 'hidden'
 container.appendChild(modal)
 let modalcontainer = document.createElement('div')
 modalcontainer.setAttribute('id', 'second-modal')
@@ -45,6 +47,7 @@ descrip.innerHTML = dates[0].fullDescription
 modalcontainer.appendChild(descrip)
 let close = document.createElement('span')
 close.setAttribute('id', 'modal-close-button')
+close.className = 'close'
 close.innerHTML = '&times;'
 modal.appendChild(close)
 document.body.getElementsByClassName("timeline")[0].appendChild(container)
@@ -54,24 +57,19 @@ document.body.getElementsByClassName("timeline")[0].appendChild(container)
 
 for (let i = 0; i < dates.length; i++) {
 
-var clickopen = document.getElementById("modal-container");
-var btn = document.getElementsByClassName("timeline-item-more-info")[i];
-var closebutton = document.getElementById("modal-close-button");
+let clickopen = document.getElementsByClassName("hidden")[i];
+let btn = document.getElementsByClassName("timeline-item-more-info")[i];
+let closebutton = document.getElementsByClassName("close")[i];
 
 
-btn.addEventListener('click', openModal);
-
-function openModal(){
+btn.addEventListener('click', (i) => {
     clickopen.style.display = 'block';
     
     
-}
+})
 
-closebutton.addEventListener('click', closeModal);
-
-function closeModal(){
+closebutton.addEventListener('click', (i) => {
     clickopen.style.display = 'none';
+})
 }
-
-} 
 

@@ -8,6 +8,23 @@ img{
   width: 200px;
 }
 
+.timeline-item{
+  border-radius: 2px solid black;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.timeline-item:nth-child(even) {
+  left: 100%;
+
+}
+
+
+
 .timeline-item-more-info{
   background: coral;
   padding: 1em, 2em;
@@ -21,11 +38,11 @@ img{
 
 #modal-container{
   display: none;
-  position: fixed;
+  position: relative;
   z-index: 1;
-  left: 0;
-  height: 65%;
-  width: 40%;
+  left: 50;
+  height: 75%;
+  width: 60%;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
 }
@@ -51,3 +68,4 @@ img{
     cursor: pointer;
 
 }
+
