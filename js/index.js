@@ -1,6 +1,12 @@
 import { dates } from "./data.js"
 
-
+let contain = document.createElement('div')
+contain.className = 'container'
+let title = document.createElement('h1')
+title.className = 'title'
+title.innerHTML = 'A History of Baking'
+contain.appendChild(title)
+document.body.getElementsByClassName('timeline')[0].appendChild(contain)
 
 for (let i = 0; i < dates.length; i++) {
 let container = document.createElement('div')
