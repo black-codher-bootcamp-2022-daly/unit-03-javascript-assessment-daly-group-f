@@ -1,38 +1,3 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-}
-img{
-  height:250px;
-  width: 200px;
-}
-
-.timeline-item{
-  border-radius: 2px solid black;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.timeline-item:nth-child(even) {
-  left: 100%;
-
-}
-
-.timeline-item-more-info{
-  background: lightskyblue;
-  padding: 1em, 2em;
-  color: white;
-  border: 0;
-}
-
-.timeline-item-more-info:hover{
-  background: lightslategray;
-}
-
 #modal{
   display: none;
   position: relative;
@@ -89,7 +54,7 @@ img{
 
 #modal-close-button{
   float: right;
-  margin: -92% 45% 0% 0%;
+  margin: -75% 45% 0% 0%;
   font-size: 20px;
   font-weight: bold;
   border-radius: 20px;
