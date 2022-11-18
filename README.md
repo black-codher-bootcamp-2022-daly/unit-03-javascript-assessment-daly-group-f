@@ -1,4 +1,4 @@
-[TODO: Replace with your Netflify status badge]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3b6db28d-8990-4a66-90f0-5fea6d868e3f/deploy-status)](https://app.netlify.com/sites/melodic-croissant-9d681a/deploys)
 
 # JavaScript Assessment
 
