@@ -53,7 +53,7 @@ for (let i = 0; i < dates.length; i++) {
 
     let descrip = document.createElement('p')
     descrip.setAttribute('id', 'modal-full-description')
-    descrip.innerHTML = dates[0].fullDescription
+    descrip.innerHTML = dates[i].fullDescription
     modalcontainer.appendChild(descrip)
 
     let close = document.createElement('span')
