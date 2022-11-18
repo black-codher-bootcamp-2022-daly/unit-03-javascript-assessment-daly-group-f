@@ -1,7 +1,5 @@
 import { dates } from "./data.js"
 
-<<<<<<< HEAD
-=======
 let contain = document.createElement('div')
 contain.className = 'container'
 let title = document.createElement('h1')
@@ -9,7 +7,6 @@ title.className = 'title'
 title.innerHTML = 'A History of Baking'
 contain.appendChild(title)
 document.body.getElementsByClassName('timeline')[0].appendChild(contain)
->>>>>>> 8308409a8cd8972f5a5e0f1e08582811c99a641d
 
 for (let i = 0; i < dates.length; i++) {
 
