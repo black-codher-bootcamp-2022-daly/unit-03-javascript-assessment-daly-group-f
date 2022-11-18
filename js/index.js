@@ -7,7 +7,7 @@ for (let i = 0; i < dates.length; i++) {
     container.className = 'timeline-item'
 
     let heading = document.createElement('h2')
-    heading.className = 'timeline-item title'
+    heading.className = 'timeline-item-title'
     heading.innerHTML = dates[i].title
     container.appendChild(heading)
 
